@@ -1,20 +1,28 @@
 {
-  "name": "yuBlog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dayuaitao/yuBlog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dayuaitao/yuBlog/issues"
-  },
-  "homepage": "https://github.com/dayuaitao/yuBlog#readme"
+    "name": "yuBlog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs",
+        "deploy": "npm run build && gh-pages -d docs/.vuepress/dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dayuaitao/yuBlog.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dayuaitao/yuBlog/issues"
+    },
+    "homepage": "https://github.com/dayuaitao/yuBlog#readme",
+    "devDependencies": {
+        "gh-pages": "^2.0.1",
+        "install": "^0.12.2",
+        "npm": "^6.9.0",
+        "vuepress": "^1.0.0-alpha.44"
+    }
 }
